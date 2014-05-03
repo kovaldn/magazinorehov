@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин орехов в Санкт-Петербурге</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Логотип -->
+        <a class="brand" href="#"> Магазинорехов.рф </a> 
+        <!-- Корзина -->
+        <a class="cart-box" data-toggle="modal" >
+          <p class="status-wrapp"><span class="glyphicon glyphicon-shopping-cart pull-left"></span>&nbsp;<span id="status">Ваша корзина пуста</span></p>
+          <div class="doit">Заказать!</div>
+        </a>
+        <!-- Телефон -->
+        <div class="phone">
+          <span class="glyphicon glyphicon-phone-alt"></span> 
+          +7 (812) 424-47-68
+        </div>
+      </div>
+    </nav>
+
+    <!-- Окно заказа -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+            </div>
+            <div class="modal-body">
+              <div class="msg"></div>
+              <form id="order-form" class="form-horizontal" role="form">
+                <h4>Ваш заказ</h4>
+                <div id="order" class="wrapp">
+                  <!-- сюда приходят заказы -->
+                </div>
+                <h4>Ваши данные</h4>
+                <div class="wrapp">
+                  <div class="form-group">
+                    <label for="name" class="col-xs-4 control-label">Ваше имя</label>
+                    <div class="col-xs-8">
+                      <input type="name" class="form-control" id="name" placeholder="Имя" name="name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="col-xs-4 control-label">Контактный телефон</label>
+                    <div class="col-xs-8">
+                      <input type="phone" class="form-control" id="phone" placeholder="Телефон" name="phone">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+              <button type="submit" class="btn btn-warning" form="order-form">Заказать</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Сообщения от системы -->
+    <div class="message-box container">
+      <div class="alert alert-warning"> 
+        Вы не выбрали ни одного товара. Кликайте по орешкам, которые нравятся!
+      </div>
+    </div>
+
+     <!-- Информация -->
+    <div class="container"> 
+      <div class="raised raised-black-wood hidden-xs" id="info-area">
+        <h1 class="header text-center">Свежие и вкусные орехи по оптовым ценам</h1>
+        <div class="col-md-6">
+          <p>Перед тем, как попасть в розничные магазины, орехи проделывают нелёгкий путь, порой даже через весь земной шар! Так, например, макадамию доставляют к нам из Австралии, а пекан - из США. Ясное дело, что орешки испытывают тяжелейший стресс: они так стремятся попасть к вам на стол и тут - на тебе! Их заставляют силой лежать и грустить в сырых и пыльных складах. Что же делать, спросите вы? Как получить <strong>максимально свежие и вкусные орешки</strong>?</p>
+        </div>
+        <div class="col-md-6">
+          <p>Выход есть - "<strong>Магазин орехов</strong>"!</p>
+          <p>Наша миссия - доставлять вам свежие и вкусные орешки прямо в руки! У нас нет склада - мы работаем напрямую с поставщиками. Раз в неделю мы производим закупку - всегда ровно столько, сколько вы заказали. Это значит, прежде всего, что вы всегда будете получать только <strong>свежий</strong> и <strong>натуральный продукт</strong>. Не верите? Проверьте! За качество мы ручаемся!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="fact hidden-xs">
+        <div class="col-md-3 col-xs-3">
+          <img src="/img/Bean-01-128.png" alt="">
+          <p>Только свежие и вкусные орехи</p>
+        </div>
+         <div class="col-md-3 col-xs-3">
+          <img src="/img/Chocolate-02-128.png" alt="">
+          <p>Гарантированный подарок при заказе от 3х кг</p>
+        </div>
+         <div class="col-md-3 col-xs-3">
+          <img src="/img/Scooter-128.png" alt="">
+          <p>Доставка по городу 200 руб. (пока только Санкт-Петербург!)</p>
+        </div>
+         <div class="col-md-3 col-xs-3">
+          <img src="/img/AIM-128.png" alt="">
+          <p>Самовывоз - м. Рыбацкое и м. Пл. Восстания</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Область товаров -->
+    <div class="container"> 
+        <div id="product-area" class="raised">
+          <h1 class="header text-center">Наш ассортимент</h1>
+          <!-- Товары рендерятся тут -->
+        </div>
+    </div>
+
+    <footer>
+      <p class="text-center"><span class="glyphicon glyphicon-phone-alt"></span> +7 (812) 424-47-68, читайте нас в контакте: <a href="https://vk.com/public65951297">vk</a>. 2014, Санкт-Петербург</p>
+    </footer>
+        
+    
+    <!-- ТОВАРЫ -->
+    <script id="blocks" type="text/x-handlebars-template">
+      {{#each blocks}}
+        <div class="col-xs-6 col-md-4 box">
+          <img src="/img/250x250/{{alias}}_250x250_tr.png" class="img-responsive img">
+          <p class='label'><span>{{rus}}</span></p>
+          <div class="info">
+            500 гр. - {{price}} руб.
+              <label for="spinner1">Количество:</label>
+              <input id="spinner1" name="{{rus}}" data="{{alias}}" data-price="price" class="spinners" value="0">
+          </div>
+        </div>
+      {{/each}}
+    </script>
+
+    <!-- КОРЗИНА -->
+    <script id="order-template" type="text/x-handlebars-template">
+      {{#each goods}}
+        {{#if amount}}
+        <div class="form-group"> 
+          <label class="col-xs-4 control-label">{{productNameRus}}</label> 
+          <div class="col-xs-8 cart-prod-line"> 
+            <div class="text-in"> 500 гр. <span class="x">x</span> </div>
+            <input id="spinner2" data="{{productAlias}}" name="{{productNameRus}}" data-price="{{productPrice}}" class="spinners" value="{{amount}}">
+            <div class="text-in"><span class="x">x</span><span class="product-price">{{productPrice}}</span><span class="x">=</span><span class="current-sum">{{productSum}}</span> руб.</div>
+          </div>
+        </div>          
+        {{/if}}
+      {{/each}}
+      <div class="form-group"> 
+        <label class="col-xs-4 control-label">Итого</label> 
+        <div class="col-xs-8 input-group"> 
+          <input type="text" id="total-sum" name="Итого" class="form-control" value="{{totalPrice}}" readonly="readonly"> 
+          <span class="input-group-addon">руб</span> 
+        </div> 
+      </div>      
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script> 
+    <script src="js/handlebars.js"></script>
+    <script src="js/common.js"></script> 
+
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter24697493 = new Ya.Metrika({id:24697493, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/24697493" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+  </body>
+</html>

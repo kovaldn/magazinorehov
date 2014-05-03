@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: 'minaeff_ectregular';
+    src: url('minaeff_ect-regular.eot');
+    src: url('minaeff_ect-regular.eot?#iefix') format('embedded-opentype'),
+         url('minaeff_ect-regular.woff') format('woff'),
+         url('minaeff_ect-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'minaeff_ectbold';
+    src: url('minaeff_ect-bold.eot');
+    src: url('minaeff_ect-bold.eot?#iefix') format('embedded-opentype'),
+         url('minaeff_ect-bold.woff') format('woff'),
+         url('minaeff_ect-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}

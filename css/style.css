@@ -1,0 +1,130 @@
+/*шрифты*/
+@font-face {font-family: 'minaeff_ectregular'; src: url('../fonts/minaeff/minaeff_ect-regular.eot'); src: url('../fonts/minaeff/minaeff_ect-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/minaeff/minaeff_ect-regular.woff') format('woff'), url('../fonts/minaeff/minaeff_ect-regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face {font-family: 'minaeff_ectbold'; src: url('../fonts/minaeff/minaeff_ect-bold.eot'); src: url('../fonts/minaeff/minaeff_ect-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/minaeff/minaeff_ect-bold.woff') format('woff'), url('../fonts/minaeff/minaeff_ect-bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+
+/*overwrite*/
+input{font-family: 'Times New Roman'; }
+textarea:focus, input:focus, button:focus{outline: 0; }
+body{background: url(../img/bgbg.jpg) repeat; font-family: 'minaeff_ectbold'; font-size: 18px; }
+.form-control:focus {border-color: #C07A39; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(162, 125, 46, 0.6); box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(196, 161, 22, 0.6); }
+.btn{outline-color: rgb(162, 125, 46, 0.6) !important; }
+h1.header{margin-bottom: 30px;border-bottom: 1px dashed;padding: 10px 20px;margin: 0 15px 20px;}
+
+/*header*/
+.navbar{background-color: rgba(255,255,255,0.6); border-bottom: 1px dashed #DDAF83; box-shadow: 0 1px 0 2px rgba(255,255,255,0.6); }
+.navbar .brand{margin: 0 auto; display: block; width: 240px; height: 125px; background: url(../img/logo-png.png) no-repeat; text-align: center; text-transform: uppercase; background-size:240px auto; color: #5F3007; line-height: 12em; }
+.navbar .brand:hover{text-decoration: none; color: #5F3007; }
+.navbar .phone{display: block; position: absolute; right: 10px; top: 16px; font-size: 20px; color: #5F3007; }
+ /*Корзина*/
+.navbar .cart-box{display: block; position: absolute; right: 10px; top: 50px; width: 250px; }
+.navbar .cart-box:hover{text-decoration: none; }
+.navbar .cart-box .status-wrapp{cursor: pointer; margin: 0; font-size: 18px; background-color: rgba(255,255,255,1); box-shadow: 0 0 0 2px rgba(255,255,255,1); padding: 6px 10px; border: 1px dashed #DDAF83; border-radius: 4px; color: #5F3007; }
+.navbar .cart-box .doit{cursor: pointer; background: #723B08; width: 120px; padding: 0px 15px; text-align: center; margin: 2px auto; color: white; border-radius: 0 0 6px 6px; font-size: 16px; }
+.navbar .cart-box.cart_fixed{position: fixed; z-index: 10; top: 4px; right: 5px; }
+
+/*факты о нас*/
+.fact{margin: 34px auto;text-align: center;}
+.fact img{margin: 0 auto;width: 40%;}
+.fact p{ font-size: 16px; padding: 20px; color: #723B08;}
+
+/*ассортимент*/
+#product-area.raised{background: rgba(255,255,255,0.2); padding:1em; margin:0 0 4em; }
+#product-area .header{margin-bottom: 30px; color: #5F3007; }
+#product-area .box{margin-bottom: 30px; }
+#product-area .box .img{border-radius: 50%; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -webkit-transition: all 0.5s linear; margin: 0 auto; cursor: pointer; }
+#product-area .box .label{color: #5F3007; display: block; padding: 6px; font-size: 20px; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -webkit-transition: all 0.5s linear; background: rgba(255,255,255,0.8); cursor: pointer; max-width: 200px; margin: 12px auto 14px; }
+#product-area .box .label span{text-align: center; padding: 0; border-radius: 4px; }
+#product-area .box .info{color: #5F3007; display: block; padding: 2px 0; background: rgba(255,255,255,0.8); width: 138px; font-size: 18px; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -webkit-transition: all 0.5s linear; text-align: center; border-radius: .25em; margin: 10px auto 20px; border: 1px dashed #DDAF83; box-shadow: 0 0 0 2px rgba(255,255,255,0.8); }
+#product-area .box:hover .info{background: rgba(255,255,255,1); box-shadow: 0 0 0 2px rgba(255,255,255,1); }
+#product-area .box:hover .label{background: rgba(255,255,255,1); box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2) }
+#product-area .box:hover .img{text-align: center; box-shadow: 0 0 7px 6px rgba(256,256,256, 1 ); }
+
+/*footer*/
+footer{background: rgba(255,255,255,0.6); width: 100%; color: #5F3007;}
+footer p{margin: 0; padding: 20px; }
+
+/*спиннер больше-меньше*/
+.ui-spinner-input{border: 2px solid #4D4747; background-color: #DDAF83; padding: 0 2px 0 12px; border-radius: 50% 0 0 50%; width: 34px; margin: 0.2em; float: left; }
+.ui-spinner-up{border-radius: 50%; background: #DDAF83 url(../img/up.png); }
+.ui-spinner-down{border-radius: 50%; background: #DDAF83 url(../img/down.png); }
+.ui-spinner-up:hover, .ui-spinner-down:hover{cursor: pointer; }
+.ui-spinner-button {width: 28px !important; height: 28px !important; position: relative !important; float: left; margin: 0.4em; }
+.ui-spinner-button:active {margin-top: 0.5em; }
+
+ /*сообщения*/
+.msg{margin: 20px 10px; }
+.alert{display: none; }
+
+/*стили для фонов блоков*/
+.raised {
+	padding:1em; 
+	margin:2em 10px 4em; 
+	background:#fff; 
+	border-radius:4px; 
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(0, 0, 0, 0.1) inset; 
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(0, 0, 0, 0.1) inset; 
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(0, 0, 0, 0.1) inset; 
+	-moz-border-radius:4px; 
+	overflow: hidden; 
+}
+.raised-black-wood{background: url('/img/Melamine-wood-004.jpg') repeat; margin: 10px auto 0; color: wheat; font-size: 16px; }
+.raised-black-wood strong{color: white;}
+
+/*модальное окно*/
+.modal-body{padding: 0 20px 10px;background: url('../img/bgbg.jpg') repeat;}
+.modal-body h4{padding-left: 15px;padding-top: 20px;padding-bottom: 0; color: #5F3007; }
+.modal-body .input-group{max-width: 160px; padding-left: 15px;}
+.modal-body input{max-width: 200px;}
+.modal-body .control-label{font-size: 15px;}
+.modal-header{border-bottom: none; color: wheat; padding-bottom: 0; }
+.modal-footer{border-top: none; padding-top: 0}
+.modal-content{background: url('/img/Melamine-wood-004.jpg') repeat;}
+.modal-footer .btn{color: #5F3007; font-size: 18px}
+.modal-body .wrapp{ color: #5F3007; background: rgba(255,255,255,0.8); border-radius: .25em; margin: 10px auto 20px; border: 1px dashed #DDAF83; box-shadow: 0 0 0 2px rgba(255,255,255,0.8); padding: 15px 0 0 }
+.modal-body .text-in{font-family: 'Times New Roman'; font-size: 14px; display: block; float: left; padding-top: 6px;}
+.modal-body .text-in .x{color:#DB7264;font-family:arial;font-weight:bold;padding:0 6px; }
+.modal-body .ui-spinner{float: left;}
+.modal-body .done-box{ font-size: 120%; padding: 20px 0 10px;}
+.spin-btn{ background: url('/img/spinner.gif') center center no-repeat; background-size: 30%; }
+
+@media (max-width: 1199px) {
+	#product-area .box .label{left: 74px; font-size: 18px; }	
+}
+
+@media (max-width: 992px) {
+	#product-area .box .label{font-size: 16px; max-width: 142px; }
+	#product-area .box:hover img{text-align: center; box-shadow: 0 0 7px 6px rgba(256,256,256, 1 ); }
+	#product-area .box .info {font-size: 15px; }
+	h1.header{font-size: 24px; }
+	.raised p{font-size: 15px; }
+}
+
+@media (max-width: 780px) {
+	label{font-size: 14px; }
+	#product-area .box .label{position: initial; margin: 10px auto 0; }
+	#product-area .box .info {font-size: 14px; }
+	.navbar .cart-box .status-wrapp{width: 260px;margin: 0 auto;}
+	.navbar .cart-box{top: 140px; width: 100%; right: 0; }
+	.navbar .cart-box p{width: 246px; margin: 0 auto; background-color: rgba(255,255,255,0.8); box-shadow: 0 0 0 2px rgba(255,255,255,0.8); }
+	.message-box{margin-top: 90px; }
+	.alert {font-size: 16px; padding: 5px 8px; }
+}
+
+@media (max-width: 400px) {
+	h1.header{font-size: 18px;}
+	.navbar{ height: 80px;}
+	.navbar .brand{width: 140px; height: 100px; background-size: 140px auto; font-size: 12px; line-height: 10.5em; margin-left: 0;}
+	#product-area {margin-top: 0; }
+	#product-area .box .info {width: auto; }
+	#product-area .box .label {width: auto; }
+	#product-area .box {margin-bottom: 14px; }
+	#product-area.raised{padding: 0;}
+	#product-area .box .label{font-size: 14px;}
+	.navbar .cart-box p{width: 196px; font-size: 14px; }
+	.navbar .cart-box {top: 94px; }
+	.navbar .phone{font-size: 14px; }
+	.alert {font-size: 14px; padding: 5px 8px; margin-bottom: 10px; }
+}
