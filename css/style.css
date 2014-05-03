@@ -28,7 +28,7 @@ h1.header{margin-bottom: 30px;border-bottom: 1px dashed;padding: 10px 20px;margi
 .fact p{ font-size: 16px; padding: 20px; color: #723B08;}
 
 /*ассортимент*/
-#product-area.raised{background: rgba(255,255,255,0.2); padding:1em; margin:0 0 4em; }
+#product-area.raised{background: rgba(255,255,255,0.2); padding:1em; margin:0 0 2em; }
 #product-area .header{margin-bottom: 30px; color: #5F3007; }
 #product-area .box{margin-bottom: 30px; }
 #product-area .box .img{border-radius: 50%; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -webkit-transition: all 0.5s linear; margin: 0 auto; cursor: pointer; }
