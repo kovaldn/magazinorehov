@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин орехов в Санкт-Петербурге</title>
 
-    <link href="/dest/style.min.css" rel="stylesheet">
+    <link href="/dest/style.min.css?v1234" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
@@ -30,14 +30,19 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+     
+
   </head>
   <body>
+
+
 
     <!-- Навигация -->
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <!-- Логотип -->
-        <a class="brand" href="#"> Магазинорехов.рф </a> 
+        <a class="brand" href="/"> Магазинорехов.рф </a> 
         <!-- Корзина -->
         <a class="cart-box" data-toggle="modal" >
           <p class="status-wrapp"><span class="glyphicon glyphicon-shopping-cart pull-left"></span>&nbsp;<span id="status">Ваша корзина пуста</span></p>
@@ -69,14 +74,14 @@
                 <h4>Ваши данные</h4>
                 <div class="wrapp">
                   <div class="form-group">
-                    <label for="name" class="col-xs-4 control-label">Ваше имя</label>
-                    <div class="col-xs-8">
+                    <label for="name" class="col-xs-3 control-label">Ваше имя</label>
+                    <div class="col-xs-9">
                       <input type="name" class="form-control" id="name" placeholder="Имя" name="name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="phone" class="col-xs-4 control-label">Контактный телефон</label>
-                    <div class="col-xs-8">
+                    <label for="phone" class="col-xs-3 control-label">Телефон</label>
+                    <div class="col-xs-9">
                       <input type="phone" class="form-control" id="phone" placeholder="Телефон" name="phone">
                     </div>
                   </div>
@@ -141,12 +146,19 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="after-text-block">
       <p>Возможность оптовых заказов, а также доставку в другие города (отличные от СПБ) уточняйте по телефону +7 (812) 424-47-68.</p>
     </div>
 
     <footer>
-      <p class="text-center"><span class="glyphicon glyphicon-phone-alt"></span> +7 (812) 424-47-68, читайте нас в контакте: <a href="https://vk.com/public65951297">vk</a>. 2014, Санкт-Петербург</p>
+      <div class="container">
+        <div class="col-md-offset-2 col-md-8">
+          <p class="text-center"><span class="glyphicon glyphicon-phone-alt"></span> +7 (812) 424-47-68, читайте нас в контакте: <a href="https://vk.com/public65951297">vk</a>. 2014, Санкт-Петербург</p>          
+        </div>
+        <div class="col-md-2">
+          <a href="http://itloft.ru/" class="made-in" target="_blank"><img src="/img/itloft-logo.png" alt="Сделано в itloft"></a>
+        </div>
+      </div>
     </footer>
         
     
@@ -170,8 +182,8 @@
       {{#each goods}}
         {{#if amount}}
         <div class="form-group"> 
-          <label class="col-xs-4 control-label">{{productNameRus}}</label> 
-          <div class="col-xs-8 cart-prod-line"> 
+          <label class="col-md-3 control-label">{{productNameRus}}</label> 
+          <div class="col-xs-12 col-md-9 cart-prod-line"> 
             <div class="text-in"> 500 гр. <span class="x">x</span> </div>
             <input id="spinner2" data="{{productAlias}}" name="{{productNameRus}}" data-price="{{productPrice}}" class="spinners" value="{{amount}}">
             <div class="text-in"><span class="x">x</span><span class="product-price">{{productPrice}}</span><span class="x">=</span><span class="current-sum">{{productSum}}</span> руб.</div>
@@ -180,8 +192,8 @@
         {{/if}}
       {{/each}}
       <div class="form-group"> 
-        <label class="col-xs-4 control-label">Итого</label> 
-        <div class="col-xs-8 input-group"> 
+        <label class="col-xs-3 control-label">Итого</label> 
+        <div class="col-xs-9 input-group"> 
           <input type="text" id="total-sum" name="Итого" class="form-control" value="{{totalPrice}}" readonly="readonly"> 
           <span class="input-group-addon">руб</span> 
         </div> 
@@ -190,6 +202,12 @@
 
 
     <script src="/dest/build.min.js"></script> 
+    <!-- <script src="/js/jquery.min.js"></script> 
+    <script src="/js/handlebars.js"></script> 
+    <script src="/js/bootstrap.min.js"></script> 
+    <script src="/js/jquery-ui-1.10.4.custom.min.js"></script> 
+    <script src="/js/common.js"></script> -->
+
 
     <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter24697493 = new Ya.Metrika({id:24697493, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/24697493" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 

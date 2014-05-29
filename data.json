@@ -3,12 +3,12 @@
         {
             "rus" : "Грецкий орех",
             "alias" : "greckiy",
-            "price" : "245"           
+            "price" : "280"           
         },      
         {
             "rus" : "Фундук",
             "alias" : "funduk",
-            "price" : "215"           
+            "price" : "280"           
         },
         {
             "rus" : "Миндаль",
@@ -29,6 +29,11 @@
             "rus" : "Кедровый орех",
             "alias" : "kedroviy",
             "price" : "620"           
+        },
+        {
+            "rus" : "Бразильский орех",
+            "alias" : "brazil",
+            "price" : "275"           
         },
         {
             "rus" : "Арахис",
@@ -59,6 +64,11 @@
             "rus" : "Финики",
             "alias" : "finiki",
             "price" : "120"           
+        },
+        {
+            "rus" : "Чернослив",
+            "alias" : "chernosliv",
+            "price" : "135"           
         }
     ]
 }

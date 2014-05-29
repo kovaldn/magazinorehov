@@ -2525,13 +2525,39 @@ Handlebars.template = Handlebars.VM.template;
 
         // отправляет запрос на сервер
         formSubmit: function (ev) {
-
             ev.preventDefault();
 
+
             var form = $(this),
-                data = form.serialize(),
+                name = $('#name').val(),
+                phone = $('#phone').val(),
+                goods = [],
+                total = app.totalPrice,
                 modalDialog = $('.modal-dialog'),
-                submitBtn = modalDialog.find('button[type="submit"]');
+                submitBtn = modalDialog.find('button[type="submit"]'),
+                msgBox = $('.msg');
+            
+            msgBox.html(''); // очищаем блок сообщений с сервера
+
+            $.each(app.order.goods, function(index, val) {  
+                if(val.amount !== 0){
+                    goods.push({
+                        'productNameRus'  : val.productNameRus, 
+                        'productPrice'    : val.productPrice,
+                        'amount'          : val.amount,
+                        'productSum'      : val.productSum   
+                    });
+                }           
+            });
+
+            var data = {
+                'goods' : goods,
+                'total' : total,
+                'name'  : name,
+                'phone' : phone
+                };
+
+            console.log(data);
 
             submitBtn.attr({disabled: 'disabled'}).addClass('spin-btn'); // защита от повторного нажатия + показываем загрузчик
 

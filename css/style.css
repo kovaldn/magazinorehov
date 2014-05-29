@@ -28,7 +28,7 @@ h1.header{margin-bottom: 30px;border-bottom: 1px dashed;padding: 10px 20px;margi
 .fact p{ font-size: 16px; padding: 20px; color: #723B08;}
 
 /*ассортимент*/
-#product-area.raised{background: rgba(255,255,255,0.2); padding:1em; margin:0 0 2em; }
+#product-area.raised{background: rgba(255,255,255,0.2); padding:1em; margin:0 0 1em; }
 #product-area .header{margin-bottom: 30px; color: #5F3007; }
 #product-area .box{margin-bottom: 30px; }
 #product-area .box .img{border-radius: 50%; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -webkit-transition: all 0.5s linear; margin: 0 auto; cursor: pointer; }
@@ -39,9 +39,14 @@ h1.header{margin-bottom: 30px;border-bottom: 1px dashed;padding: 10px 20px;margi
 #product-area .box:hover .label{background: rgba(255,255,255,1); box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2) }
 #product-area .box:hover .img{text-align: center; box-shadow: 0 0 7px 6px rgba(256,256,256, 1 ); }
 
+/*оптовые заказы*/
+#after-text-block{margin: 10px auto 14px; text-align: center;}
+
 /*footer*/
-footer{background: rgba(255,255,255,0.6); width: 100%; color: #5F3007;}
+footer{background: rgba(255,255,255,0.6); width: 100%; color: #5F3007; position: relative;}
+footer .container{position: relative;}
 footer p{margin: 0; padding: 20px; }
+footer .made-in img{margin: 8px auto; display: block;}
 
 /*спиннер больше-меньше*/
 .ui-spinner-input{border: 2px solid #4D4747; background-color: #DDAF83; padding: 0 2px 0 12px; border-radius: 50% 0 0 50%; width: 34px; margin: 0.2em; float: left; }
@@ -127,4 +132,5 @@ footer p{margin: 0; padding: 20px; }
 	.navbar .cart-box {top: 94px; }
 	.navbar .phone{font-size: 14px; }
 	.alert {font-size: 14px; padding: 5px 8px; margin-bottom: 10px; }
+	.modal-body{padding: 0 6px 10px;}
 }

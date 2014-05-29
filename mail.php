@@ -1,3 +1,3 @@
 <?php
-	define("CONTACT_FORM", 'kovaldn@gmail.com');
+	define("CONTACT_FORM", 'order@magazinorehov.ru');
 ?>
